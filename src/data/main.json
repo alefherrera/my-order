@@ -1,0 +1,16 @@
+{
+  "options": [
+    {
+      "title": "Entrada",
+      "description": "Platos de entrada"
+    },
+    {
+      "title": "Platos Principales",
+      "description": "Platos ricos"
+    },
+    {
+      "title": "Postres",
+      "description": "Cosas dulces"
+    }
+  ]
+}
