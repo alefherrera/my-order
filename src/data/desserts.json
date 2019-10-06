@@ -32,7 +32,7 @@
         {
             "title": "Flan",
             "description": "Flan casero con dulce de leche y crema.",
-            "image": "Entradas/FlanCasero99.jpg",
+            "image": "Desserts/FlanCasero99.jpg",
             "price": 99,
             "stars": 5,
             "ingredients": [
