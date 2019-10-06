@@ -1,0 +1,71 @@
+{"title":"Bebidas",
+    "options": [
+        {
+            "title": "Gaseosa",
+            "description": "Gaseosa línea Pepsi chica",
+            "image": "Drinks/geseosalineaPepsi86.jpg",
+            "price": 86,
+            "sides": [
+                {
+                    "name": "Pepsi"
+                },
+                {
+                    "name": "Pepsi light"
+                },
+                {
+                    "name": "7Up"
+                },
+                {
+                    "name": "7Up Light"
+                },
+                {
+                    "name": "Mirinda"
+                }
+            ]
+
+        },
+        {
+            "title": "Agua mineral",
+            "description": "Agua mineral ECO 500ml",
+            "image": "Drinks/agua86500ml.jpg",
+            "price": 99,
+            "ingredients": [
+                {
+                    "name": "Con Gas"
+                },
+                {
+                    "name": "Sin Gas"
+                }
+            ]
+
+        },
+
+
+        {
+            "title": "Agua saborizada",
+            "description": "Agua saborizada Aquarius 500ml",
+            "image": "Drinks/aquarius500-115.jpg",
+            "price": 115,
+            "sides": [
+                {
+                    "name": "Manzana"
+                },
+                {
+                    "name": "Pera"
+                },
+                {
+                    "name": "Naranja"
+                }
+            ]
+
+        },
+        {
+            "title": "Cervesa",
+            "description": "Lata de cervesa del 473 ml.",
+            "image": "Drinks/Cerves473ml 145.jpg",
+            "price": 145
+           
+        }
+      
+    ]
+}
