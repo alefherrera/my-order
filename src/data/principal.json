@@ -1,0 +1,42 @@
+{
+    "options": [
+        {
+            "title": "Milanesa Clásica con Guarnición",
+            "description": "La mejor milanesa de ternera Angus o suprema de Pollo y perejil.",
+            "image":"PlatosPrincipales/milanesaclasica325conguarni.jpg",
+            "ingredients": [
+                {
+                    "name": "Pollo"
+                },
+                {
+                    "name": "Carne"
+                }
+            ],
+            "sides": [
+                {
+                    "name": "Papas Fritas"
+                },
+                {
+                    "name": "Puré de papas"
+                },
+                {
+                    "name": "Puré Mixto"
+                },
+                {
+                    "name": "Ensalada de zanahoria y huevo"
+                },
+                {
+                    "name": "Ensalada de lechuga y tomate"
+                }
+            ]
+        },
+        {
+            "title": "Platos Principales",
+            "description": "Platos ricos"
+        },
+        {
+            "title": "Postres",
+            "description": "Cosas dulces"
+        }
+    ]
+}
