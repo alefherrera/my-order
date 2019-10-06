@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import data from '../../data/main';
-import MenuCard from '../MenuCard';
+import MainCard from '../MainCard';
 
 const Container = styled.div`
     display: flex;
@@ -12,7 +12,7 @@ function Main() {
     return (<Container>
     {
         data.options.map(option => {
-            return <MenuCard key={option.title} {...option} />;
+            return <MainCard key={option.title} {...option} />;
         })
     }
     </Container>);
