@@ -15,14 +15,16 @@ function MenuItem({ title, description, price, stars, image }) {
         </Typography>
       </CardContent>
       <CardMedia
-        style={{ height: 140 }}
+        style={{ height: 250 }}
         image={`http://raw.githubusercontent.com/alefherrera/my-order/develop/src/assets/${image}`}
         title={title}
       />
-      <Typography variant="h6" color="textSecondary" component="p">
-        {`Precio: $ ${price}`}
-      </Typography>
-      <Rating value={stars} readOnly />
+      <CardContent>
+        <Typography variant="h6" color="textSecondary" component="p">
+          {`Precio: $ ${price}`}
+        </Typography>
+        {stars && <Rating value={stars} readOnly />}
+      </CardContent>
     </Card>
   );
 }

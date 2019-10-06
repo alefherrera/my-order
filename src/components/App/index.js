@@ -6,6 +6,7 @@ import { Router } from "@reach/router";
 import { Container } from "@material-ui/core";
 import DessertsPage from "../DessertsPage";
 import ApperitizersPage from "../ApperitizersPage";
+import DrinksPage from "../DrinksPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <DishesPage path="/dishes" />
           <DessertsPage path="/desserts" />
           <ApperitizersPage path="/apperitizers" />
+          <DrinksPage path="/drinks" />
         </Router>
       </Container>
     </div>
