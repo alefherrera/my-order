@@ -1,0 +1,64 @@
+{
+    "options": [
+        {
+            "title": "Cheese Cake Maracuya",
+            "description": "Clásica, con frutos rojos y maracuya",
+            "image": "Desserts/CheescakeMaracuya120.jpg",
+            "price": 120,
+            "stars": 3
+        },
+        {
+            "title": "Mousse de chocolate",
+            "description": "Mouse de chocolate",
+            "image": "Desserts/Mousse99.jpg",
+            "price": 99,
+            "stars": 5
+        },
+        {
+            "title": "Tiramisú",
+            "description": ".",
+            "image": "Desserts/tiramisúItaliano99.jpg",
+            "price": 99,
+            "stars": 5
+        },
+        {
+            "title": "Chocotorta",
+            "description": "Porción en cuadrado de chocotorta.",
+            "image": "Desserts/chocotorta.jpg",
+            "price": 165,
+            "stars": 5
+        },
+        {
+            "title": "Rabas",
+            "description": "Porción de rabas para compartir.",
+            "image": "Desserts/rabas360.jpg",
+            "price": 360,
+            "stars": 5
+        },
+        {
+            "title": "Nachos",
+            "description": "Nachos para compartir.",
+            "image": "Entradas/nachos170.jpg",
+            "price": 170,
+            "stars": 5,
+            "ingredients": [
+                {
+                    "name": "Cheddar"
+                },
+                {
+                    "name": "Ciboulette"
+                },
+                {
+                    "name": "Panceta crocante"
+                }
+            ]
+        },
+        {
+            "title": "Pechuguitas crocantes",
+            "description": "Rellenas de muzzarella y empanadas con Panko, con aderezo de salsa barbacoa.",
+            "image": "Entradas/pechugas170.jpg",
+            "price": 170,
+            "stars": 4
+        }
+    ]
+}

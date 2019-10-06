@@ -1,0 +1,64 @@
+{
+    "options": [
+        {
+            "title": "Aros de cebolla",
+            "description": "Aros de cebolla, con aderezo de salsa barbacoa.",
+            "image": "Entradas/aros170.jpg",
+            "price": 170,
+            "stars": 5
+        },
+        {
+            "title": "Bastoncitos de Muzzarella",
+            "description": "Bastones de muzzarella rebozados con aderezo de salsa filetto.",
+            "image": "Entradas/basntoncitos170.jpg",
+            "price": 170,
+            "stars": 5
+        },
+        {
+            "title": "Papas Fritas",
+            "description": "Porción de papas fritas para compartir.",
+            "image": "Entradas/papas165.jpg",
+            "price": 165,
+            "stars": 5
+        },
+        {
+            "title": "Papas Fritas con cheddar",
+            "description": "Porción de papas fritas con cheddar para compartir.",
+            "image": "Entradas/papaschedas195.jpg",
+            "price": 195,
+            "stars": 5
+        },
+        {
+            "title": "Rabas",
+            "description": "Porción de rabas para compartir.",
+            "image": "Entradas/rabas360.jpg",
+            "price": 360,
+            "stars": 5
+        },
+        {
+            "title": "Nachos",
+            "description": "Nachos para compartir.",
+            "image": "Entradas/nachos170.jpg",
+            "price": 170,
+            "stars": 5,
+            "ingredients": [
+                {
+                    "name": "Cheddar"
+                },
+                {
+                    "name": "Ciboulette"
+                },
+                {
+                    "name": "Panceta crocante"
+                }
+            ]
+        },
+        {
+            "title": "Pechuguitas crocantes",
+            "description": "Rellenas de muzzarella y empanadas con Panko, con aderezo de salsa barbacoa.",
+            "image": "Entradas/pechugas170.jpg",
+            "price": 170,
+            "stars": 4
+        }
+    ]
+}

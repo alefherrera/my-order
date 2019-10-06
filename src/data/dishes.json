@@ -1,0 +1,158 @@
+{
+    "options": [
+        {
+            "title": "Milanesa Clásica con Guarnición",
+            "description": "La mejor milanesa de ternera Angus o suprema de Pollo y perejil.",
+            "image": "PlatosPrincipales/milanesaclasica325conguarni.jpg",
+            "price": 325,
+            "stars": 5,
+            "ingredients": [
+                {
+                    "name": "Pollo"
+                },
+                {
+                    "name": "Carne"
+                }
+            ],
+            "sides": [
+                {
+                    "name": "Papas Fritas"
+                },
+                {
+                    "name": "Puré de papas"
+                },
+                {
+                    "name": "Puré Mixto"
+                },
+                {
+                    "name": "Ensalada de zanahoria y huevo"
+                },
+                {
+                    "name": "Ensalada de lechuga y tomate"
+                }
+            ]
+        },
+        {
+            "title": "Sándwich doble Tex-Mex con Papas",
+            "description": "Pan aireado con semillas de sésamo humectado con mayonesa del club, doble milanesa de peceto ó pollo, muzzarella, cebolla morada y guacamole. Viene con papas fritas.",
+            "image": "PlatosPrincipales/hamburguesaTexMex325.jpg",
+            "price": 325,
+            "stars": 4,
+            "ingredients": [
+                {
+                    "name": "Mayonesa"
+                },
+                {
+                    "name": "Muzzarela"
+                },
+                {
+                    "name": "Cebolla Morada"
+                },
+                {
+                    "name": "Guacamole"
+                }
+            ]
+        },
+        {
+            "title": "Ensalada clásica",
+            "description": "Ensalada clásica con varios ingredientes.",
+            "image": "PlatosPrincipales/ensaladaclasica195.jpg",
+            "price": 195,
+            "stars": 3,
+            "ingredients": [
+                {
+                    "name": "Cebolla"
+                },
+                {
+                    "name": "Lechuga"
+                },
+                {
+                    "name": "Tomate"
+                },
+                {
+                    "name": "Huevo"
+                },
+                {
+                    "name": "Zanahoria"
+                }
+            ]
+        },
+        {
+            "title": "Ensalada caesar",
+            "description": "Lechuga, pollo, croutones con salsa Caesar y parmesano.",
+            "image": "PlatosPrincipales/ensaladaCaesar280.jpg",
+            "price": 280,
+            "stars": 4,
+            "ingredients": [
+                {
+                    "name": "Salsa Caesar"
+                },
+                {
+                    "name": "Parmesano"
+                }
+            ]
+        },
+        {
+            "title": "Hamburguesa con queso",
+            "description": "Hamburguesa de carne 100% vacuna con doble queso cheddar, cebolla fresca, mostaza y kétchup.",
+            "image": "PlatosPrincipales/haburguesaQueso215.jpg",
+            "price": 215,
+            "stars": 4,
+            "ingredients": [
+                {
+                    "name": "Cebolla"
+                },
+                {
+                    "name": "Kétchup"
+                },
+                {
+                    "name": "Queso cheddar"
+                },
+                {
+                    "name": "Mostaza"
+                }
+            ]
+        },
+        {
+            "title": "Hamburguesa de pollo completa",
+            "description": "Pan tipo brioche junto a una pechuga de pollo crispy con bacon, lechuga, tomate, cebolla grillada, queso cheddar blanco y nuestra salsa especial.",
+            "image": "PlatosPrincipales/hamburguesapollocompleta250.jpg",
+            "price": 250,
+            "stars": 4,
+            "ingredients": [
+                {
+                    "name": "Cebolla grillada"
+                },
+                {
+                    "name": "Bacon"
+                },
+                {
+                    "name": "Queso cheddar"
+                },
+                {
+                    "name": "Salsa especial"
+                },
+                {
+                    "name": "Lechuga"
+                },
+                {
+                    "name": "Tomate"
+                }
+            ]
+        },
+        {
+            "title": "Tarta de Verdura",
+            "description": "",
+            "image": "PlatosPrincipales/tarta220.jpg",
+            "price": 220,
+            "stars": 4
+        },
+        {
+            "title": "Tarta de Jamon y queso",
+            "description": "",
+            "image": "PlatosPrincipales/tartajq220.jpg",
+            "price": 220,
+            "stars": 4
+        }
+    ]
+}
