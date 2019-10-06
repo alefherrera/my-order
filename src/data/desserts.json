@@ -1,4 +1,4 @@
-{
+{"title":"Postres",
     "options": [
         {
             "title": "Cheese Cake Maracuya",
@@ -28,37 +28,22 @@
             "price": 165,
             "stars": 5
         },
+   
         {
-            "title": "Rabas",
-            "description": "Porción de rabas para compartir.",
-            "image": "Desserts/rabas360.jpg",
-            "price": 360,
-            "stars": 5
-        },
-        {
-            "title": "Nachos",
-            "description": "Nachos para compartir.",
-            "image": "Entradas/nachos170.jpg",
-            "price": 170,
+            "title": "Flan",
+            "description": "Flan casero con dulce de leche y crema.",
+            "image": "Entradas/FlanCasero99.jpg",
+            "price": 99,
             "stars": 5,
             "ingredients": [
                 {
-                    "name": "Cheddar"
+                    "name": "Crema"
                 },
                 {
-                    "name": "Ciboulette"
-                },
-                {
-                    "name": "Panceta crocante"
+                    "name": "Dulce de leche"
                 }
             ]
-        },
-        {
-            "title": "Pechuguitas crocantes",
-            "description": "Rellenas de muzzarella y empanadas con Panko, con aderezo de salsa barbacoa.",
-            "image": "Entradas/pechugas170.jpg",
-            "price": 170,
-            "stars": 4
         }
+      
     ]
 }
