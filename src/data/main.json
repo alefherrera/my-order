@@ -2,15 +2,18 @@
   "options": [
     {
       "title": "Entrada",
-      "description": "Platos de entrada"
+      "description": "Platos de entrada",
+      "path": "start"
     },
     {
       "title": "Platos Principales",
-      "description": "Platos ricos"
+      "description": "Platos ricos",
+      "path": "dishes"
     },
     {
       "title": "Postres",
-      "description": "Cosas dulces"
+      "description": "Cosas dulces",
+      "path": "desserts"
     }
   ]
 }
