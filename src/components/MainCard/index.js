@@ -1,13 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import PropTypes from "prop-types";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Typography from "@material-ui/core/Typography";
 
 function MenuCard({ title, description }) {
-
   return (
     <Card>
       <CardActionArea>
@@ -17,10 +16,10 @@ function MenuCard({ title, description }) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-          {title}
+            {title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-          {description}
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -29,8 +28,8 @@ function MenuCard({ title, description }) {
 }
 
 MenuCard.propTypes = {
-    title: PropTypes.string,
-    description: PropTypes.string,
-}
+  title: PropTypes.string,
+  description: PropTypes.string
+};
 
 export default MenuCard;

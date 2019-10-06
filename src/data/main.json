@@ -6,11 +6,13 @@
     },
     {
       "title": "Platos Principales",
-      "description": "Platos ricos"
+      "description": "Platos ricos",
+      "url": "dishes"
     },
     {
       "title": "Postres",
-      "description": "Cosas dulces"
+      "description": "Cosas dulces",
+      "url": "desserts"
     }
   ]
 }
