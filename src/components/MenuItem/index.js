@@ -1,20 +1,38 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
+import Rating from "@material-ui/lab/Rating";
 
-function MenuItem({ title, description, image }) {
+function MenuItem({ title, description, price, stars, image }) {
   return (
-    <React.Fragment>
-      {title}
-      {description}
-      <img src={`assets/${image}`} />
-    </React.Fragment>
+    <Card style={{ maxWidth: 345 }}>
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="h2">
+          {title}
+        </Typography>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {description}
+        </Typography>
+      </CardContent>
+      <CardMedia
+        style={{ height: 140 }}
+        image={`http://raw.githubusercontent.com/alefherrera/my-order/develop/src/assets/${image}`}
+        title={title}
+      />
+      <Typography variant="h6" color="textSecondary" component="p">
+        {`Precio: $ ${price}`}
+      </Typography>
+      <Rating value={stars} readOnly />
+    </Card>
   );
 }
 
 MenuItem.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  stars: PropTypes.number.isRequired
 };
 
 export default MenuItem;
