@@ -1,12 +1,12 @@
-import React from "react";
-import Header from "../Header";
-import Main from "../Main";
-import DishesPage from "../DishesPage";
-import { Router } from "@reach/router";
-import { Container } from "@material-ui/core";
-import DessertsPage from "../DessertsPage";
-import ApperitizersPage from "../ApperitizersPage";
-import DrinksPage from "../DrinksPage";
+import React from 'react';
+import Header from '../../components/Header';
+import Main from '../../components/Main';
+import DishesPage from '../DishesPage';
+import { Router } from '@reach/router';
+import { Container } from '@material-ui/core';
+import DessertsPage from '../DessertsPage';
+import ApperitizersPage from '../ApperitizersPage';
+import DrinksPage from '../DrinksPage';
 
 function App() {
   return (

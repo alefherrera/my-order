@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Toolbar, AppBar, Typography } from "@material-ui/core";
-import { Link } from "@reach/router";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Toolbar, AppBar, Typography } from '@material-ui/core';
+import { Link } from '@reach/router';
 
 function Header({ title, children }) {
   return (
@@ -18,7 +18,7 @@ function Header({ title, children }) {
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.any
+  children: PropTypes.any,
 };
 
 export default Header;

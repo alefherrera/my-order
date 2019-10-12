@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../../data/drinks";
-import MenuPage from "../MenuPage";
+import MenuPage from "../../components/MenuPage";
 
 function DrinksPage() {
   return <MenuPage {...data} />;

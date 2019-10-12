@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import data from "../../data/main";
-import MainCard from "../MainCard";
+import React from 'react';
+import styled from 'styled-components';
+import data from '../../data/main';
+import MainCard from '../MainCard';
 
 const Container = styled.div`
   display: flex;

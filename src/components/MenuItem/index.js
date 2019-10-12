@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
-import Rating from "@material-ui/lab/Rating";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Card, CardContent, CardMedia, Typography } from '@material-ui/core';
+import Rating from '@material-ui/lab/Rating';
 
 function MenuItem({ title, description, price, stars, image }) {
   return (
@@ -34,7 +34,7 @@ MenuItem.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  stars: PropTypes.number.isRequired
+  stars: PropTypes.number.isRequired,
 };
 
 export default MenuItem;

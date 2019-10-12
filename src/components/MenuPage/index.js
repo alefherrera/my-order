@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import MenuItem from "../MenuItem";
-import { Card, Typography } from "@material-ui/core";
+import React from 'react';
+import PropTypes from 'prop-types';
+import MenuItem from '../MenuItem';
+import { Card, Typography } from '@material-ui/core';
 
 function MenuPage({ title, options }) {
   return (
@@ -16,7 +16,7 @@ function MenuPage({ title, options }) {
 
 MenuPage.propTypes = {
   title: PropTypes.string.isRequired,
-  options: PropTypes.array.isRequired
+  options: PropTypes.array.isRequired,
 };
 
 export default MenuPage;
