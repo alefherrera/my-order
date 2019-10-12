@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Card, CardContent, CardMedia, Typography } from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
 
-function MenuItem({ title, description, price, stars, image }) {
+function MenuItem({ title, description, price, stars, image, onClick }) {
   return (
-    <Card style={{ maxWidth: 345 }}>
+    <Card style={{ maxWidth: 345 }} onClick={onClick}>
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
           {title}
@@ -35,6 +35,7 @@ MenuItem.propTypes = {
   image: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   stars: PropTypes.number.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default MenuItem;
