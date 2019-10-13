@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { dialog } from '../../slices';
 import MenuItem from '../../components/MenuItem';
 import { Card, Typography } from '@material-ui/core';
+import Footer from '../Footer';
 
 function MenuPage({ title, options }) {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ function MenuPage({ title, options }) {
           }}
         />
       ))}
+      <Footer />
     </Card>
   );
 }
