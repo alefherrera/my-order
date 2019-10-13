@@ -11,6 +11,7 @@ import AddItemDialog from '../AddItemDialog';
 import OrderPage from '../OrderPage';
 import data from '../../data/app';
 import Footer from '../Footer';
+import Explain from '../Explain';
 
 function App() {
   return (

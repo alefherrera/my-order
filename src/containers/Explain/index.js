@@ -1,10 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function Explain(props) {
+function Explain() {
   return <div>Explain</div>;
 }
-
-Explain.propTypes = {};
 
 export default Explain;
