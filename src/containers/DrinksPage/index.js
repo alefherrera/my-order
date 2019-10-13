@@ -1,9 +1,24 @@
-import React from "react";
-import data from "../../data/drinks";
-import MenuPage from "../../components/MenuPage";
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { notification, item } from '../../slices';
+import data from '../../data/drinks';
+import MenuPage from '../../components/MenuPage';
 
 function DrinksPage() {
-  return <MenuPage {...data} />;
+  const dispatch = useDispatch();
+  return (
+    <MenuPage
+      {...data}
+      onItemClick={option => {
+        dispatch(item.actions.addItem(option));
+        dispatch(
+          notification.actions.showNotification({
+            message: option.title + ' agregado correctamente!',
+          })
+        );
+      }}
+    />
+  );
 }
 
 export default DrinksPage;
