@@ -29,7 +29,7 @@
             "description": "Agua mineral ECO 500ml",
             "image": "Drinks/agua86500ml.jpg",
             "price": 99,
-            "ingredients": [
+            "sides": [
                 {
                     "name": "Con Gas"
                 },
@@ -60,8 +60,8 @@
 
         },
         {
-            "title": "Cervesa",
-            "description": "Lata de cervesa del 473 ml.",
+            "title": "Cerveza",
+            "description": "Lata de cerveza del 473 ml.",
             "image": "Drinks/Cerves473ml 145.jpg",
             "price": 145
            
