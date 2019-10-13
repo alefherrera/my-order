@@ -8,11 +8,13 @@ import DessertsPage from '../DessertsPage';
 import ApperitizersPage from '../ApperitizersPage';
 import DrinksPage from '../DrinksPage';
 import AddItemDialog from '../AddItemDialog';
+import OrderPage from '../OrderPage';
+import data from '../../data/app';
 
 function App() {
   return (
     <div className="App">
-      <Header title="My Order"></Header>
+      <Header title={data.title} order={data.order}></Header>
       <Container fixed style={{ paddingTop: 100 }}>
         <Router>
           <Main path="/" />
@@ -20,6 +22,7 @@ function App() {
           <DessertsPage path="/desserts" />
           <ApperitizersPage path="/apperitizers" />
           <DrinksPage path="/drinks" />
+          <OrderPage path="/order" />
         </Router>
       </Container>
       <AddItemDialog />

@@ -3,12 +3,15 @@ import PropTypes from 'prop-types';
 import { Toolbar, AppBar, Typography } from '@material-ui/core';
 import { Link } from '@reach/router';
 
-function Header({ title, children }) {
+function Header({ title, order, children }) {
   return (
-    <AppBar>
+    <AppBar style={{ flexGrow: 1 }}>
       <Toolbar>
-        <Link to="/">
+        <Link to="/" style={{ flexGrow: 1 }}>
           <Typography variant="h6">{title}</Typography>
+        </Link>
+        <Link to="/order">
+          <Typography variant="h6">{order}</Typography>
         </Link>
       </Toolbar>
       {children}
@@ -18,6 +21,7 @@ function Header({ title, children }) {
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
+  order: PropTypes.string.isRequired,
   children: PropTypes.any,
 };
 

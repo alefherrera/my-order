@@ -2,5 +2,7 @@
   "title": "${title}",
   "notification": "${title} agregado correctamente!",
   "sides": "Opciones",
-  "ingredients": "Ingredientes"
+  "ingredients": "Ingredientes",
+  "accept": "Aceptar",
+  "cancel": "Cancelar"
 }

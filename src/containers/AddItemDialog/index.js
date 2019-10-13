@@ -53,7 +53,7 @@ function AddItemDialog() {
             });
           }}
         >
-          Aceptar
+          {data.accept}
         </Button>
         <Button
           variant="contained"
@@ -62,7 +62,7 @@ function AddItemDialog() {
             handleClose();
           }}
         >
-          Cancelar
+          {data.cancel}
         </Button>
       </DialogActions>
     </Dialog>
