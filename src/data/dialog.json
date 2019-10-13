@@ -1,6 +1,6 @@
 {
   "title": "Titulo ${title}",
-  "notification": "agregado correctamente!",
+  "notification": "${title} agregado correctamente!",
   "sides": "Acompañamientos",
   "ingredients": "Ingredientes"
 }
