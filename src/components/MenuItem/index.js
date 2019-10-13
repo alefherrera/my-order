@@ -46,7 +46,7 @@ MenuItem.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  stars: PropTypes.number.isRequired,
+  stars: PropTypes.number,
   onClick: PropTypes.func.isRequired,
 };
 
