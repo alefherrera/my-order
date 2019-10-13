@@ -11,7 +11,11 @@ function ApperitizersPage() {
       {...data}
       onItemClick={option => {
         dispatch(item.actions.addItem(option));
-        dispatch(notification.actions.showNotification(data.feedback));
+        dispatch(
+          notification.actions.showNotification({
+            message: option.title + ' agregado correctamente!',
+          })
+        );
       }}
     />
   );
