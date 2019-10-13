@@ -25,6 +25,8 @@ function AddItemDialog() {
   const handleClose = () => dispatch(dialog.actions.close());
   const addItem = option => dispatch(item.actions.addItem(option));
   const getTitle = option => (option ? title(option) : '');
+  const ingredientChange = ingredient =>
+    dispatch(dialog.actions.ingredientChange(ingredient));
 
   if (!open) return null;
 
@@ -33,7 +35,11 @@ function AddItemDialog() {
       <DialogTitle>{getTitle(option)}</DialogTitle>
       <DialogContent dividers>
         <SidesRadio title={data.sides} option={option} />
-        <IngredientsChecks title={data.ingredients} option={option} />
+        <IngredientsChecks
+          title={data.ingredients}
+          option={option}
+          onChange={ingredientChange}
+        />
       </DialogContent>
       <DialogActions>
         <Button

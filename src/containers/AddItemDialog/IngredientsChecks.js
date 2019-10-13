@@ -7,16 +7,18 @@ import {
   Typography,
 } from '@material-ui/core';
 
-function IngredientsChecks({ title, option }) {
+function IngredientsChecks({ title, option, onChange }) {
   if (!option) return null;
   if (!option.ingredients) return null;
   return (
     <React.Fragment>
       <Typography variant="h6">{title}</Typography>
       <FormGroup>
-        {option.ingredients.map(({ name }) => (
+        {option.ingredients.map(({ name, checked }) => (
           <FormControlLabel
             value={name}
+            checked={checked}
+            onChange={() => onChange(name)}
             key={name}
             control={<Checkbox />}
             label={name}
@@ -30,6 +32,7 @@ function IngredientsChecks({ title, option }) {
 IngredientsChecks.propTypes = {
   title: PropTypes.string.isRequired,
   option: PropTypes.any,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default IngredientsChecks;

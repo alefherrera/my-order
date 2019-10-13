@@ -13,7 +13,7 @@ function IngredientsRadio({ title, option }) {
   return (
     <React.Fragment>
       <Typography variant="h6">{title}</Typography>
-      <RadioGroup>
+      <RadioGroup defaultValue={option.sides[0].name}>
         {option.sides.map(({ name }) => (
           <FormControlLabel
             value={name}

@@ -1,5 +1,27 @@
 import { createSlice } from 'redux-starter-kit';
 
+const checkIngredients = option => {
+  if (!option.ingredients) {
+    return option;
+  }
+  return {
+    ...option,
+    ingredients: option.ingredients.map(ingredient => ({
+      ...ingredient,
+      checked: true,
+    })),
+  };
+};
+
+const changeCheck = (option, payload) => ({
+  ...option,
+  ingredients: option.ingredients.map(ingredient => {
+    return ingredient.name === payload
+      ? { ...ingredient, checked: !ingredient.checked }
+      : ingredient;
+  }),
+});
+
 export const item = createSlice({
   initialState: [],
   reducers: {
@@ -16,10 +38,14 @@ export const dialog = createSlice({
     show: (state, { payload }) => ({
       ...state,
       open: true,
-      option: payload,
+      option: checkIngredients(payload),
     }),
     close: () => ({
       open: false,
+    }),
+    ingredientChange: (state, { payload }) => ({
+      ...state,
+      option: changeCheck(state.option, payload),
     }),
   },
 });
