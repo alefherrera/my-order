@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { notification, item } from '../../slices';
+import { item } from '../../slices';
 import MenuItem from '../../components/MenuItem';
 import { Card, Typography } from '@material-ui/core';
+import { useSnackbar } from 'notistack';
 
 function MenuPage({ title, options }) {
   const dispatch = useDispatch();
+  const { enqueueSnackbar } = useSnackbar();
   return (
     <Card>
       <Typography variant="h4">{title}</Typography>
@@ -16,11 +18,9 @@ function MenuPage({ title, options }) {
           {...option}
           onClick={() => {
             dispatch(item.actions.addItem(option));
-            dispatch(
-              notification.actions.showNotification({
-                message: option.title + ' agregado correctamente!',
-              })
-            );
+            enqueueSnackbar(option.title + ' agregado correctamente!', {
+              variant: 'success',
+            });
           }}
         />
       ))}
@@ -31,7 +31,6 @@ function MenuPage({ title, options }) {
 MenuPage.propTypes = {
   title: PropTypes.string.isRequired,
   options: PropTypes.array.isRequired,
-  onItemClick: PropTypes.func.isRequired,
 };
 
 export default MenuPage;

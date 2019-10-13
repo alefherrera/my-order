@@ -7,7 +7,6 @@ import { Container } from '@material-ui/core';
 import DessertsPage from '../DessertsPage';
 import ApperitizersPage from '../ApperitizersPage';
 import DrinksPage from '../DrinksPage';
-import SnackbarContainer from '../SnackbarContainer';
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
           <DrinksPage path="/drinks" />
         </Router>
       </Container>
-      <SnackbarContainer />
     </div>
   );
 }
