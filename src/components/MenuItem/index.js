@@ -1,11 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, CardContent, CardMedia, Typography } from '@material-ui/core';
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  CardActions,
+  Button,
+} from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
 
 function MenuItem({ title, description, price, stars, image, onClick }) {
   return (
-    <Card style={{ maxWidth: 345 }} onClick={onClick}>
+    <Card style={{ maxWidth: 345 }}>
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
           {title}
@@ -25,6 +32,11 @@ function MenuItem({ title, description, price, stars, image, onClick }) {
         </Typography>
         {stars && <Rating value={stars} readOnly />}
       </CardContent>
+      <CardActions>
+        <Button variant="contained" color="primary" onClick={onClick}>
+          Agregar
+        </Button>
+      </CardActions>
     </Card>
   );
 }
