@@ -26,6 +26,8 @@ function AddItemDialog() {
   const addItem = option => dispatch(item.actions.addItem(option));
   const getTitle = option => (option ? title(option) : '');
 
+  if (!open) return null;
+
   return (
     <Dialog open={open} onClose={handleClose}>
       <DialogTitle>{getTitle(option)}</DialogTitle>
