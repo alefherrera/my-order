@@ -1,0 +1,12 @@
+{
+    "title": "Pedido",
+    "paragraph1": "Este proyecto es un trabajo de Tesis para la Licenciatura en Sistemas de la Universidad Nacional General Sarmiento.",
+    "paragraph2":" El objetivo de nuestra tesis es realizar el análisis de experiencia de usuario* en una aplicación comercial.",
+    "paragraph3":"La aplicación que elegimos como objeto de estudio, es una aplicación para realizar el pedido en un restaurante.",
+    "paragraph4":"Al hacer clic en el botón “Iniciar”, le aparecerá una demostración de la aplicación. Le pedimos si es tan amable que navegue por la aplicación y simule la generación de un pedido.",
+    "paragraph5":"Al terminar la simulación le dejaremos una breve encuesta donde deberá responder acerca de cómo se sintió al utilizar la aplicación.",
+    "paragraph6":"Queremos agradecerles por el tiempo invertido para colaborar en nuestra tesis.",
+
+    "ini": "Iniciar prueba"
+    
+  }
