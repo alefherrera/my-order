@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Typography } from '@material-ui/core';
+import { Card, Typography, List, CardContent } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import data from '../../data/order';
 import { orderSelector } from '../../selectors';
@@ -14,9 +14,11 @@ function OrderPage() {
   const order = useSelector(orderSelector);
   return (
     <Card>
-      <Typography variant="h4">{data.title}</Typography>
-      {renderItems(order.items)}
-      {order.total}
+      <CardContent>
+        <Typography variant="h4">{data.title}</Typography>
+        <List>{renderItems(order.items)}</List>
+        <Typography variant="h3"> {`$${order.total}`}</Typography>
+      </CardContent>
     </Card>
   );
 }
