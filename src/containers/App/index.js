@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../Header';
 import Main from '../../components/Main';
 import DishesPage from '../DishesPage';
 import { Router } from '@reach/router';
@@ -10,6 +10,7 @@ import DrinksPage from '../DrinksPage';
 import AddItemDialog from '../AddItemDialog';
 import OrderPage from '../OrderPage';
 import data from '../../data/app';
+import Footer from '../Footer';
 
 function App() {
   return (
@@ -23,8 +24,10 @@ function App() {
           <ApperitizersPage path="/apperitizers" />
           <DrinksPage path="/drinks" />
           <OrderPage path="/order" />
+          <Explain default />
         </Router>
       </Container>
+      <Footer />
       <AddItemDialog />
     </div>
   );
