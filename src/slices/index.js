@@ -22,7 +22,28 @@ const changeCheck = (option, payload) => ({
   }),
 });
 
-export const item = createSlice({
+const selectSide = (option, payload) => ({
+  ...option,
+  sides: option.sides.map(side => ({
+    ...side,
+    checked: side.name === payload,
+  })),
+});
+
+const checkSides = option => {
+  if (!option.sides) {
+    return option;
+  }
+  return {
+    ...option,
+    sides: option.sides.map((side, i) => ({
+      ...side,
+      checked: i === 0,
+    })),
+  };
+};
+
+export const preorder = createSlice({
   initialState: [],
   reducers: {
     addItem: (state, { payload }) => [...state, payload],
@@ -38,7 +59,7 @@ export const dialog = createSlice({
     show: (state, { payload }) => ({
       ...state,
       open: true,
-      option: checkIngredients(payload),
+      option: checkSides(checkIngredients(payload)),
     }),
     close: () => ({
       open: false,
@@ -46,6 +67,10 @@ export const dialog = createSlice({
     ingredientChange: (state, { payload }) => ({
       ...state,
       option: changeCheck(state.option, payload),
+    }),
+    selectSide: (state, { payload }) => ({
+      ...state,
+      option: selectSide(state.option, payload),
     }),
   },
 });

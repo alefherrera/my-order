@@ -1,6 +1,6 @@
-import { item, dialog } from '../slices';
+import { preorder, dialog } from '../slices';
 
 export default {
-  item: item.reducer,
+  preorder: preorder.reducer,
   dialog: dialog.reducer,
 };

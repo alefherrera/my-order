@@ -7,17 +7,19 @@ import {
   Typography,
 } from '@material-ui/core';
 
-function IngredientsRadio({ title, option }) {
+function IngredientsRadio({ title, option, onChange }) {
   if (!option) return null;
   if (!option.sides) return null;
   return (
     <React.Fragment>
       <Typography variant="h6">{title}</Typography>
-      <RadioGroup defaultValue={option.sides[0].name}>
-        {option.sides.map(({ name }) => (
+      <RadioGroup>
+        {option.sides.map(({ name, checked }) => (
           <FormControlLabel
-            value={name}
             key={name}
+            value={name}
+            checked={checked}
+            onChange={() => onChange(name)}
             control={<Radio />}
             label={name}
           />
@@ -30,6 +32,7 @@ function IngredientsRadio({ title, option }) {
 IngredientsRadio.propTypes = {
   title: PropTypes.string.isRequired,
   option: PropTypes.any,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default IngredientsRadio;

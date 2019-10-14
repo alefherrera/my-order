@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useSnackbar } from 'notistack';
 import { dialogSelector } from '../../selectors';
-import { item, dialog } from '../../slices';
+import { preorder, dialog } from '../../slices';
 import {
   Button,
   Dialog,
@@ -23,10 +23,11 @@ function AddItemDialog() {
   const { enqueueSnackbar } = useSnackbar();
   const dispatch = useDispatch();
   const handleClose = () => dispatch(dialog.actions.close());
-  const addItem = option => dispatch(item.actions.addItem(option));
+  const addItem = option => dispatch(preorder.actions.addItem(option));
   const getTitle = option => (option ? title(option) : '');
   const ingredientChange = ingredient =>
     dispatch(dialog.actions.ingredientChange(ingredient));
+  const selectSide = side => dispatch(dialog.actions.selectSide(side));
 
   if (!open) return null;
 
@@ -34,7 +35,7 @@ function AddItemDialog() {
     <Dialog open={open} onClose={handleClose}>
       <DialogTitle>{getTitle(option)}</DialogTitle>
       <DialogContent dividers>
-        <SidesRadio title={data.sides} option={option} />
+        <SidesRadio title={data.sides} option={option} onChange={selectSide} />
         <IngredientsChecks
           title={data.ingredients}
           option={option}

@@ -16,10 +16,10 @@ function IngredientsChecks({ title, option, onChange }) {
       <FormGroup>
         {option.ingredients.map(({ name, checked }) => (
           <FormControlLabel
+            key={name}
             value={name}
             checked={checked}
             onChange={() => onChange(name)}
-            key={name}
             control={<Checkbox />}
             label={name}
           />

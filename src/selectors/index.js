@@ -5,10 +5,10 @@ export const dialogSelector = createSelector(
   dialog => dialog
 );
 
-export const orderSelector = createSelector(
-  state => state.item,
-  item => ({
-    items: item,
-    total: item.reduce((p, c) => p + c.price, 0),
+export const preorderSelector = createSelector(
+  state => state.preorder,
+  preorder => ({
+    items: preorder,
+    total: preorder.reduce((p, c) => p + c.price, 0),
   })
 );
