@@ -14,6 +14,7 @@ import template from 'lodash/template';
 import SidesRadio from './SidesRadio';
 import IngredientsChecks from './IngredientsChecks';
 import data from '../../data/dialog';
+import ChoicesRadio from './ChoicesRadio';
 
 const title = template(data.title);
 const notification = template(data.notification);
@@ -28,6 +29,7 @@ function AddItemDialog() {
   const ingredientChange = ingredient =>
     dispatch(dialog.actions.ingredientChange(ingredient));
   const selectSide = side => dispatch(dialog.actions.selectSide(side));
+  const selectChoice = choice => dispatch(dialog.actions.selectChoice(choice));
 
   if (!open) return null;
 
@@ -36,6 +38,11 @@ function AddItemDialog() {
       <DialogTitle>{getTitle(option)}</DialogTitle>
       <DialogContent dividers>
         <SidesRadio title={data.sides} option={option} onChange={selectSide} />
+        <ChoicesRadio
+          title={data.choices}
+          option={option}
+          onChange={selectChoice}
+        />
         <IngredientsChecks
           title={data.ingredients}
           option={option}

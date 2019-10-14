@@ -20,8 +20,14 @@ const renderSide = item => {
   return `Acompañado de: ${head(side)};`;
 };
 
+const renderChoice = item => {
+  if (!item.choices) return null;
+  const choice = item.choices.filter(x => x.checked).map(x => x.name);
+  return `${head(choice)};`;
+};
+
 const renderSecondary = item => {
-  const texts = [renderSide(item), renderIngredients(item)];
+  const texts = [renderSide(item), renderIngredients(item), renderChoice(item)];
   return join(texts, ' ');
 };
 

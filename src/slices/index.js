@@ -43,6 +43,27 @@ const checkSides = option => {
   };
 };
 
+const selectChoice = (option, payload) => ({
+  ...option,
+  choices: option.choices.map(side => ({
+    ...side,
+    checked: side.name === payload,
+  })),
+});
+
+const checkChoices = option => {
+  if (!option.choices) {
+    return option;
+  }
+  return {
+    ...option,
+    choices: option.choices.map((side, i) => ({
+      ...side,
+      checked: i === 0,
+    })),
+  };
+};
+
 export const preorder = createSlice({
   initialState: [],
   reducers: {
@@ -59,7 +80,7 @@ export const dialog = createSlice({
     show: (state, { payload }) => ({
       ...state,
       open: true,
-      option: checkSides(checkIngredients(payload)),
+      option: checkChoices(checkSides(checkIngredients(payload))),
     }),
     close: () => ({
       open: false,
@@ -71,6 +92,10 @@ export const dialog = createSlice({
     selectSide: (state, { payload }) => ({
       ...state,
       option: selectSide(state.option, payload),
+    }),
+    selectChoice: (state, { payload }) => ({
+      ...state,
+      option: selectChoice(state.option, payload),
     }),
   },
 });

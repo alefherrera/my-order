@@ -38,7 +38,11 @@ function MenuPage({ title, options }) {
                 key={option.title}
                 {...option}
                 onClick={() => {
-                  if (isEmpty(option.sides) && isEmpty(option.ingredients)) {
+                  if (
+                    isEmpty(option.sides) &&
+                    isEmpty(option.ingredients) &&
+                    isEmpty(option.choices)
+                  ) {
                     dispatch(preorder.actions.addItem(option));
                     enqueueSnackbar(notification(option), {
                       variant: 'success',
