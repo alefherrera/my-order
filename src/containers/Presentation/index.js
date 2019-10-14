@@ -31,7 +31,7 @@ function Explain() {
         <div style={{ textAlign: 'center', marginTop: 100 }}>
           <Link to="/">
             <Button variant="contained" color="primary">
-              Iniciar
+              {data.button}
             </Button>
           </Link>
         </div>
