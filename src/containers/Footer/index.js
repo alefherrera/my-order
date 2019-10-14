@@ -25,36 +25,28 @@ function Footer() {
       <Divider />
       <BottomNavigation showLabels>
         <BottomNavigationAction
+          component={Link}
+          to="/apperitizers"
           label="Entrada"
-          icon={
-            <Link to="/apperitizers">
-              <FastfoodIcon />
-            </Link>
-          }
+          icon={<FastfoodIcon />}
         />
         <BottomNavigationAction
+          component={Link}
+          to="/dishes"
           label="Platos"
-          icon={
-            <Link to="/dishes">
-              <LocalDiningRoundedIcon />
-            </Link>
-          }
+          icon={<LocalDiningRoundedIcon />}
         />
         <BottomNavigationAction
+          component={Link}
+          to="/desserts"
           label="Postres"
-          icon={
-            <Link to="/desserts">
-              <CakeIcon />
-            </Link>
-          }
+          icon={<CakeIcon />}
         />
         <BottomNavigationAction
+          component={Link}
+          to="/drinks"
           label="Bebidas"
-          icon={
-            <Link to="/drinks">
-              <LocalDrinkIcon />
-            </Link>
-          }
+          icon={<LocalDrinkIcon />}
         />
       </BottomNavigation>
     </Container>
