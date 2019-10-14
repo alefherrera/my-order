@@ -31,7 +31,7 @@ function MenuItem({ title, description, price, stars, image, onClick }) {
       </CardContent>
       <CardMedia
         style={{ height: 200 }}
-        image={`http://raw.githubusercontent.com/alefherrera/my-order/develop/src/assets/${image}`}
+        image={`/assets/${image}`}
         title={title}
       />
       <CardContent>{stars && <Rating value={stars} readOnly />}</CardContent>
