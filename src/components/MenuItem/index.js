@@ -18,6 +18,12 @@ const Container = styled.div`
   padding: 0px 16px 8px 16px;
 `;
 
+const getUrl = image =>
+  //eslint-disable-next-line
+  process.env.NODE_ENV === 'development'
+    ? `/assets/${image}`
+    : `/my-order/assets/${image}`;
+
 function MenuItem({ title, description, price, stars, image, onClick }) {
   return (
     <Card style={{ maxWidth: 345, margin: 10 }}>
@@ -29,11 +35,7 @@ function MenuItem({ title, description, price, stars, image, onClick }) {
           {description}
         </Typography>
       </CardContent>
-      <CardMedia
-        style={{ height: 200 }}
-        image={`/assets/${image}`}
-        title={title}
-      />
+      <CardMedia style={{ height: 200 }} image={getUrl(image)} title={title} />
       <CardContent>{stars && <Rating value={stars} readOnly />}</CardContent>
       <CardActions>
         <Container>
