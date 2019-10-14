@@ -5,7 +5,14 @@ import { dialog } from '../../slices';
 import MenuItem from '../../components/MenuItem';
 import { Typography, CardContent } from '@material-ui/core';
 import styled from 'styled-components';
+import template from 'lodash/template';
+import isEmpty from 'lodash/isEmpty';
+import { useSnackbar } from 'notistack';
 import Footer from '../Footer';
+import data from '../../data/dialog';
+import { preorder } from '../../slices';
+
+const notification = template(data.notification);
 
 const Container = styled.div`
   display: flex;
@@ -19,6 +26,7 @@ const PageContainer = styled.div`
 
 function MenuPage({ title, options }) {
   const dispatch = useDispatch();
+  const { enqueueSnackbar } = useSnackbar();
   return (
     <React.Fragment>
       <PageContainer>
@@ -30,7 +38,14 @@ function MenuPage({ title, options }) {
                 key={option.title}
                 {...option}
                 onClick={() => {
-                  dispatch(dialog.actions.show(option));
+                  if (isEmpty(option.sides) && isEmpty(option.ingredients)) {
+                    dispatch(preorder.actions.addItem(option));
+                    enqueueSnackbar(notification(option), {
+                      variant: 'success',
+                    });
+                  } else {
+                    dispatch(dialog.actions.show(option));
+                  }
                 }}
               />
             ))}
