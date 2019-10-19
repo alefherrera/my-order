@@ -42,7 +42,11 @@ function PrestantationPage() {
         steps={total}
         activeStep={activeStep}
         nextButton={
-          <Button size="small" onClick={handleNext} disabled={activeStep === 5}>
+          <Button
+            size="small"
+            onClick={handleNext}
+            disabled={activeStep === total - 1}
+          >
             Adelante
             {theme.direction === 'rtl' ? (
               <KeyboardArrowLeft />
