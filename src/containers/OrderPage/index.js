@@ -6,11 +6,14 @@ import {
   CardContent,
   ListItem,
   ListItemText,
+  Button,
 } from '@material-ui/core';
 import { useSelector } from 'react-redux';
+import { Link } from '@reach/router';
 import data from '../../data/order';
 import { preorderSelector } from '../../selectors';
 import OrderItem from '../../components/OrderItem';
+import ButtonContianer from '../../components/ButtonContainer';
 
 function renderItems(items) {
   if (!items) return null;
@@ -30,6 +33,13 @@ function OrderPage() {
           <ListItemText primary="Total" />
           <Typography variant="h3"> {`$${order.total}`}</Typography>
         </ListItem>
+        <ButtonContianer top={50}>
+          <Link to="/preparation">
+            <Button variant="contained" color="primary">
+              {data.finish}
+            </Button>
+          </Link>
+        </ButtonContianer>
       </CardContent>
     </Card>
   );

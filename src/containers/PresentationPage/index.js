@@ -5,8 +5,9 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 import data from '../../data/presentation';
 import { Link } from '@reach/router';
+import ButtonContianer from '../../components/ButtonContainer';
 
-function Explain() {
+function PrestantationPage() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
 
@@ -28,13 +29,13 @@ function Explain() {
         {text}
       </Typography>
       {activeStep === total - 1 && (
-        <div style={{ textAlign: 'center', marginTop: 100 }}>
+        <ButtonContianer>
           <Link to="/">
             <Button variant="contained" color="primary">
               {data.button}
             </Button>
           </Link>
-        </div>
+        </ButtonContianer>
       )}
       <MobileStepper
         variant="dots"
@@ -65,4 +66,4 @@ function Explain() {
   );
 }
 
-export default Explain;
+export default PrestantationPage;

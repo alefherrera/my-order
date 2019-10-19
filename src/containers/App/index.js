@@ -10,7 +10,8 @@ import DrinksPage from '../DrinksPage';
 import AddItemDialog from '../AddItemDialog';
 import OrderPage from '../OrderPage';
 import data from '../../data/app';
-import Presentation from '../Presentation';
+import PresentationPage from '../PresentationPage';
+import PreparationPage from '../PreparationPage';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
           <ApperitizersPage path="/apperitizers" />
           <DrinksPage path="/drinks" />
           <OrderPage path="/order" />
-          <Presentation default />
+          <PreparationPage path="/preparation" />
+          <PresentationPage default />
         </Router>
       </Container>
       <AddItemDialog />
