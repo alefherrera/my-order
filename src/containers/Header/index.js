@@ -22,6 +22,7 @@ function Header({ title, order, children }) {
               height={32}
               style={{ marginRight: 10 }}
               src={getUrl('logo.png')}
+              alt="logo"
             ></img>{' '}
             <Typography variant="h6">{title}</Typography>
           </Container>
