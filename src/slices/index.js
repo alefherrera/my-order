@@ -64,11 +64,13 @@ const checkChoices = option => {
   };
 };
 
+let id = 0;
+
 export const preorder = createSlice({
   initialState: [],
   reducers: {
-    addItem: (state, { payload }) => [...state, payload],
-    removeItem: (state, { payload }) => state.filter(x => x.title !== payload),
+    addItem: (state, { payload }) => [...state, { ...payload, id: id++ }],
+    removeItem: (state, { payload }) => state.filter(x => x.id !== payload.id),
   },
 });
 
