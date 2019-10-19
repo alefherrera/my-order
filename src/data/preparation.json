@@ -1,6 +1,6 @@
 {
-  "title": "Pedido en preparación",
-  "description": "Su pedido esta en preparación, va a ser entregado inmediatamente.",
+  "title": "Su pedido se encuentra en preparación",
+  "description": "Aguarde unos minutos y un mozo le estará haciendo la entrega en su mesa.",
   "image": "wait1.gif",
   "link": "https://docs.google.com/forms/d/e/1FAIpQLSfGax-50INAOGn72AGJlNsijW66wNC3_Ucc7-7jiGHMovlVNQ/viewform?usp=pp_url",
   "button": "Iniciar encuesta"
