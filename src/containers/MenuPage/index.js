@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { dialog } from '../../slices';
 import MenuItem from '../../components/MenuItem';
 import { Typography, CardContent } from '@material-ui/core';
 import styled from 'styled-components';
@@ -10,7 +9,7 @@ import isEmpty from 'lodash/isEmpty';
 import { useSnackbar } from 'notistack';
 import Footer from '../Footer';
 import data from '../../data/dialog';
-import { preorder } from '../../slices';
+import { preorder, dialog } from '../../slices';
 
 const notification = template(data.notification);
 

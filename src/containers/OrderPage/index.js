@@ -15,15 +15,16 @@ import { preorderSelector } from '../../selectors';
 import OrderItem from '../../components/OrderItem';
 import ButtonContianer from '../../components/ButtonContainer';
 import { useDispatch } from 'react-redux';
-import { preorder } from '../../slices';
+import { preorder, dialog } from '../../slices';
 
-function renderItems(items, onDelete) {
+function renderItems(items, onDelete, onEdit) {
   if (!items) return null;
   return items.map(item => (
     <OrderItem
       key={JSON.stringify(item)}
       item={item}
       onDeleteClick={onDelete}
+      onEditClick={onEdit}
     />
   ));
 }
@@ -32,11 +33,12 @@ function OrderPage() {
   const order = useSelector(preorderSelector);
   const dispatch = useDispatch();
   const onDelete = item => dispatch(preorder.actions.removeItem(item));
+  const onEdit = item => dispatch(dialog.actions.show(item));
   return (
     <Card>
       <CardContent>
         <Typography variant="h4">{data.title}</Typography>
-        <List>{renderItems(order.items, onDelete)}</List>
+        <List>{renderItems(order.items, onDelete, onEdit)}</List>
         <ListItem>
           <ListItemText primary="Total" />
           <Typography variant="h3"> {`$${order.total}`}</Typography>

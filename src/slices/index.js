@@ -4,6 +4,9 @@ const checkIngredients = option => {
   if (!option.ingredients) {
     return option;
   }
+  if (option.id !== undefined) {
+    return option;
+  }
   return {
     ...option,
     ingredients: option.ingredients.map(ingredient => ({
@@ -34,6 +37,9 @@ const checkSides = option => {
   if (!option.sides) {
     return option;
   }
+  if (option.id !== undefined) {
+    return option;
+  }
   return {
     ...option,
     sides: option.sides.map((side, i) => ({
@@ -55,6 +61,9 @@ const checkChoices = option => {
   if (!option.choices) {
     return option;
   }
+  if (option.id !== undefined) {
+    return option;
+  }
   return {
     ...option,
     choices: option.choices.map((side, i) => ({
@@ -66,10 +75,18 @@ const checkChoices = option => {
 
 let id = 0;
 
+const addOrEdit = (state, item) => {
+  if (item.id !== undefined) {
+    return state.map(x => (x.id === item.id ? item : x));
+  } else {
+    return [...state, { ...item, id: id++ }];
+  }
+};
+
 export const preorder = createSlice({
   initialState: [],
   reducers: {
-    addItem: (state, { payload }) => [...state, { ...payload, id: id++ }],
+    addItem: (state, { payload }) => addOrEdit(state, payload),
     removeItem: (state, { payload }) => state.filter(x => x.id !== payload.id),
   },
 });
