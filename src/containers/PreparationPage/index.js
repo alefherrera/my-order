@@ -20,7 +20,7 @@ function PreparationPage() {
           {data.description}
         </Typography>
       </ButtonContainer>
-      <ButtonContainer top={0}>
+      <ButtonContainer top={5}>
         <img alt="waiting" src={getUrl(data.image)} />
       </ButtonContainer>
       <ButtonContainer top={10}>
