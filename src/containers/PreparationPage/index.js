@@ -12,7 +12,7 @@ const getUrl = image =>
 function PreparationPage() {
   return (
     <div>
-      <ButtonContainer top={50}>
+      <ButtonContainer top={10}>
         <Typography gutterBottom variant="h5" component="h2">
           {data.title}
         </Typography>
@@ -20,10 +20,10 @@ function PreparationPage() {
           {data.description}
         </Typography>
       </ButtonContainer>
-      <ButtonContainer top={10}>
+      <ButtonContainer top={0}>
         <img alt="waiting" src={getUrl(data.image)} />
       </ButtonContainer>
-      <ButtonContainer top={20}>
+      <ButtonContainer top={10}>
         <Link href={data.link}>
           <Button variant="contained" color="primary">
             {data.button}
