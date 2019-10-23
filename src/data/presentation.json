@@ -4,7 +4,7 @@
     "Este proyecto es un trabajo de Tesis para la Licenciatura en Sistemas de la Universidad Nacional General Sarmiento.",
     "El objetivo de nuestra tesis es realizar el análisis de experiencia de usuario de una aplicación para realizar pedidos en un restaurante.",
     "Al hacer clic en el botón “Iniciar”, le aparecerá una demostración de la aplicación. Deberá navegar por la aplicación y simular la generación de un pedido.",
-    "Al terminar la simulación le dejaremos una breve encuesta donde deberá responder acerca de cómo se sintió al utilizar la aplicación."
+    "Al terminar la simulación le dejaremos una breve encuesta."
   ],
   "button": "Iniciar prueba"
 }
