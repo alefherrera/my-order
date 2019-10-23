@@ -29,7 +29,7 @@ function PrestantationPage() {
         {text}
       </Typography>
       {activeStep === total - 1 && (
-        <ButtonContianer>
+        <ButtonContianer top={20}>
           <Link to="/">
             <Button variant="contained" color="primary">
               {data.button}

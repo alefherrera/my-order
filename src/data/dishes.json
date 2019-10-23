@@ -7,7 +7,7 @@
       "image": "PlatosPrincipales/milanesaclasica325conguarni.jpg",
       "price": 325,
       "stars": 5,
-      "ingredients": [
+      "choices": [
         {
           "name": "Pollo"
         },
