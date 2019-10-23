@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/my-order/static/css/main.c0c92423.chunk.css",
-    "main.js": "/my-order/static/js/main.23149c19.chunk.js",
-    "main.js.map": "/my-order/static/js/main.23149c19.chunk.js.map",
+    "main.js": "/my-order/static/js/main.eecdb1ac.chunk.js",
+    "main.js.map": "/my-order/static/js/main.eecdb1ac.chunk.js.map",
     "runtime-main.js": "/my-order/static/js/runtime-main.c0cc2cb0.js",
     "runtime-main.js.map": "/my-order/static/js/runtime-main.c0cc2cb0.js.map",
     "static/js/2.9d001bd9.chunk.js": "/my-order/static/js/2.9d001bd9.chunk.js",
     "static/js/2.9d001bd9.chunk.js.map": "/my-order/static/js/2.9d001bd9.chunk.js.map",
     "index.html": "/my-order/index.html",
-    "precache-manifest.400e64cfe000a9cfe428519b6fd24f10.js": "/my-order/precache-manifest.400e64cfe000a9cfe428519b6fd24f10.js",
+    "precache-manifest.714df81cea82ef024756f5aec720cbe9.js": "/my-order/precache-manifest.714df81cea82ef024756f5aec720cbe9.js",
     "service-worker.js": "/my-order/service-worker.js",
     "static/css/main.c0c92423.chunk.css.map": "/my-order/static/css/main.c0c92423.chunk.css.map"
   }
