@@ -51,32 +51,38 @@ const renderSecondary = item => {
 
 function OrderItem({ item, onDeleteClick, onEditClick }) {
   return (
-    <ListItem>
-      <ListItemText primary={item.title} secondary={renderSecondary(item)} />
-      <ListItemSecondaryAction>
-        <Typography variant="h5" component="span">
-          {`$${item.price}`}
-        </Typography>
-        <IconButton
-          edge="end"
-          aria-label="edit"
-          onClick={() => {
-            onEditClick(item);
-          }}
-        >
-          <EditRoundedIcon />
-        </IconButton>
-        <IconButton
-          edge="end"
-          aria-label="delete"
-          onClick={() => {
-            onDeleteClick(item);
-          }}
-        >
-          <DeleteRoundedIcon />
-        </IconButton>
-      </ListItemSecondaryAction>
-    </ListItem>
+    <React.Fragment>
+      <ListItem>
+        <ListItemText primary={item.title} secondary={renderSecondary(item)} />
+        <ListItemSecondaryAction>
+          <Typography variant="h5" component="span">
+            {`$${item.price}`}
+          </Typography>
+        </ListItemSecondaryAction>
+      </ListItem>
+      <ListItem>
+        <ListItemSecondaryAction>
+          <IconButton
+            edge="end"
+            aria-label="edit"
+            onClick={() => {
+              onEditClick(item);
+            }}
+          >
+            <EditRoundedIcon />
+          </IconButton>
+          <IconButton
+            edge="end"
+            aria-label="delete"
+            onClick={() => {
+              onDeleteClick(item);
+            }}
+          >
+            <DeleteRoundedIcon />
+          </IconButton>
+        </ListItemSecondaryAction>
+      </ListItem>
+    </React.Fragment>
   );
 }
 
