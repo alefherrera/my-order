@@ -21,7 +21,7 @@ function PreparationPage() {
         </Typography>
       </ButtonContainer>
       <ButtonContainer top={5}>
-        <img alt="waiting" src={getUrl(data.image)} />
+        <img style={{ width: '100%' }} alt="waiting" src={getUrl(data.image)} />
       </ButtonContainer>
       {data.show && (
         <ButtonContainer top={10}>
