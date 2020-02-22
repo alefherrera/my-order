@@ -39,8 +39,17 @@ const renderChoice = item => {
   return `${head(choice)}`;
 };
 
+const renderComment = item => {
+  if (!item.comment) return null;
+  return `Comentarios: ${item.comment}`;
+};
+
 const renderSecondary = item => {
-  const texts = [renderSide(item), renderIngredients(item)];
+  const texts = [
+    renderSide(item),
+    renderIngredients(item),
+    renderComment(item),
+  ];
   return (
     <div>
       <ChoiceContainer>{renderChoice(item)}</ChoiceContainer>

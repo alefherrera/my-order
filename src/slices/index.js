@@ -25,6 +25,11 @@ const changeCheck = (option, payload) => ({
   }),
 });
 
+const setComment = (option, payload) => ({
+  ...option,
+  comment: payload,
+});
+
 const selectSide = (option, payload) => ({
   ...option,
   sides: option.sides.map(side => ({
@@ -115,6 +120,10 @@ export const dialog = createSlice({
     selectChoice: (state, { payload }) => ({
       ...state,
       option: selectChoice(state.option, payload),
+    }),
+    commentChange: (state, { payload }) => ({
+      ...state,
+      option: setComment(state.option, payload),
     }),
   },
 });

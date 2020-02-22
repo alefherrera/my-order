@@ -9,6 +9,7 @@ import {
   DialogTitle,
   DialogActions,
   DialogContent,
+  TextField,
 } from '@material-ui/core';
 import template from 'lodash/template';
 import SidesRadio from './SidesRadio';
@@ -20,7 +21,7 @@ const title = template(data.title);
 const notification = template(data.notification);
 
 function AddItemDialog() {
-  const { open, option } = useSelector(dialogSelector);
+  const { open, option, comment } = useSelector(dialogSelector);
   const { enqueueSnackbar } = useSnackbar();
   const dispatch = useDispatch();
   const handleClose = () => dispatch(dialog.actions.close());
@@ -28,6 +29,8 @@ function AddItemDialog() {
   const getTitle = option => (option ? title(option) : '');
   const ingredientChange = ingredient =>
     dispatch(dialog.actions.ingredientChange(ingredient));
+  const commentChange = event =>
+    dispatch(dialog.actions.commentChange(event.target.value));
   const selectSide = side => dispatch(dialog.actions.selectSide(side));
   const selectChoice = choice => dispatch(dialog.actions.selectChoice(choice));
 
@@ -47,6 +50,16 @@ function AddItemDialog() {
           title={data.ingredients}
           option={option}
           onChange={ingredientChange}
+        />
+        <TextField
+          fullWidth
+          style={{ marginTop: 20 }}
+          label={data.comment}
+          value={comment}
+          onChange={commentChange}
+          variant="outlined"
+          multiline
+          rows="4"
         />
       </DialogContent>
       <DialogActions>
