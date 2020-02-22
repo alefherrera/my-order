@@ -23,13 +23,15 @@ function PreparationPage() {
       <ButtonContainer top={5}>
         <img alt="waiting" src={getUrl(data.image)} />
       </ButtonContainer>
-      <ButtonContainer top={10}>
-        <Link href={data.link}>
-          <Button variant="contained" color="primary">
-            {data.button}
-          </Button>
-        </Link>
-      </ButtonContainer>
+      {data.show && (
+        <ButtonContainer top={10}>
+          <Link href={data.link}>
+            <Button variant="contained" color="primary">
+              {data.button}
+            </Button>
+          </Link>
+        </ButtonContainer>
+      )}
     </div>
   );
 }
