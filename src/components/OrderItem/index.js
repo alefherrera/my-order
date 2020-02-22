@@ -65,7 +65,7 @@ function OrderItem({ item, onDeleteClick, onEditClick }) {
       <ListItem disableGutters>
         <ListItemText primary={item.title} secondary={renderSecondary(item)} />
         <ListItemSecondaryAction>
-          <Typography variant="h5" component="span">
+          <Typography variant="h6" component="span">
             {`$${item.price}`}
           </Typography>
         </ListItemSecondaryAction>
