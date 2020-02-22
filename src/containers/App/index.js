@@ -19,7 +19,7 @@ function App() {
       <Header title={data.title} order={data.order}></Header>
       <Container fixed style={{ paddingTop: 100 }}>
         <Router>
-          <Main default path="/" />
+          <Main path="/" />
           <DishesPage path="/dishes" />
           <DessertsPage path="/desserts" />
           <ApperitizersPage path="/apperitizers" />
