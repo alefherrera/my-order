@@ -10,7 +10,7 @@ import DrinksPage from '../DrinksPage';
 import AddItemDialog from '../AddItemDialog';
 import OrderPage from '../OrderPage';
 import data from '../../data/app';
-import PresentationPage from '../PresentationPage';
+//import PresentationPage from '../PresentationPage';
 import PreparationPage from '../PreparationPage';
 
 function App() {
@@ -19,14 +19,14 @@ function App() {
       <Header title={data.title} order={data.order}></Header>
       <Container fixed style={{ paddingTop: 100 }}>
         <Router>
-          <Main path="/" />
+          <Main default path="/" />
           <DishesPage path="/dishes" />
           <DessertsPage path="/desserts" />
           <ApperitizersPage path="/apperitizers" />
           <DrinksPage path="/drinks" />
           <OrderPage path="/order" />
           <PreparationPage path="/preparation" />
-          <PresentationPage default />
+          {/*<PresentationPage default />*/}
         </Router>
       </Container>
       <AddItemDialog />
