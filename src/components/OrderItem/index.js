@@ -6,6 +6,7 @@ import {
   Typography,
   ListItemSecondaryAction,
   IconButton,
+  Divider,
 } from '@material-ui/core';
 import join from 'lodash/join';
 import head from 'lodash/head';
@@ -61,7 +62,7 @@ const renderSecondary = item => {
 function OrderItem({ item, onDeleteClick, onEditClick }) {
   return (
     <React.Fragment>
-      <ListItem>
+      <ListItem disableGutters>
         <ListItemText primary={item.title} secondary={renderSecondary(item)} />
         <ListItemSecondaryAction>
           <Typography variant="h5" component="span">
@@ -69,7 +70,7 @@ function OrderItem({ item, onDeleteClick, onEditClick }) {
           </Typography>
         </ListItemSecondaryAction>
       </ListItem>
-      <ListItem>
+      <ListItem disableGutters>
         <ListItemSecondaryAction>
           <IconButton
             edge="end"
@@ -91,6 +92,7 @@ function OrderItem({ item, onDeleteClick, onEditClick }) {
           </IconButton>
         </ListItemSecondaryAction>
       </ListItem>
+      <Divider style={{ marginTop: 10 }} />
     </React.Fragment>
   );
 }
