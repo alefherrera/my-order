@@ -12,24 +12,36 @@ const Container = styled.div`
   display: flex;
 `;
 
+const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+const Text = styled(Typography)({
+  color: 'white',
+});
+
 function Header({ title, order, children }) {
   return (
     <AppBar style={{ flexGrow: 1 }}>
       <Toolbar>
-        <Link to="/" style={{ flexGrow: 1 }}>
-          <Container>
-            <img
-              height={32}
-              style={{ marginRight: 10 }}
-              src={getUrl('logo.png')}
-              alt="logo"
-            ></img>{' '}
-            <Typography variant="h6">{title}</Typography>
-          </Container>
-        </Link>
-        <Link to="/order">
-          <Typography variant="h6">{order}</Typography>
-        </Link>
+        <HeaderContainer>
+          <Link to="/">
+            <Container>
+              <img
+                height={32}
+                style={{ marginRight: 10 }}
+                src={getUrl('logo.png')}
+                alt="logo"
+              ></img>{' '}
+              <Text variant="h6">{title}</Text>
+            </Container>
+          </Link>
+          <Link to="/order">
+            <Text variant="h6">{order}</Text>
+          </Link>
+        </HeaderContainer>
       </Toolbar>
       {children}
     </AppBar>
