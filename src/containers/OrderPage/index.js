@@ -45,13 +45,15 @@ function OrderPage() {
         />
         <Typography variant="h3"> {`$${order.total}`}</Typography>
       </ListItem>
-      <ButtonContianer top={50}>
-        <Link to="/preparation">
-          <Button variant="contained" color="primary">
-            {data.finish}
-          </Button>
-        </Link>
-      </ButtonContianer>
+      <CardContent>
+        <ButtonContianer top={50}>
+          <Link to="/preparation">
+            <Button variant="contained" color="primary">
+              {data.finish}
+            </Button>
+          </Link>
+        </ButtonContianer>
+      </CardContent>
     </React.Fragment>
   );
 }
