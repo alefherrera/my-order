@@ -10,7 +10,7 @@
     "@material-ui/styles": "^4.5.0",
     "@reach/router": "^1.2.1",
     "gh-pages": "^2.1.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "notistack": "^0.9.4",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
